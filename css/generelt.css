@@ -1,5 +1,13 @@
 body {
   margin: 0px;
+  width: auto;
+  height: 100%;
+}
+
+main{
+  margin: 0px;
+  width: auto;
+  height: 100%;
 }
 
 /*BURGERMENU*/
@@ -87,7 +95,7 @@ li {
 
 @font-face {
   font-family: "Ogg";
-  src: url(/Fonts/Ogg-www.dfonts.org/Ogg-Roman.otf);
+  src: url(/Ogg-Roman.otf);
 }
 
 p {
@@ -114,7 +122,6 @@ h2 {
 }
 
 h3 {
-  position: block;
   font-family: "Ogg";
   font-weight: lighter;
   font-size: 15px;
@@ -230,19 +237,20 @@ img {
 }
 
 .billede_front img {
-  height: 100vh;
+  height: 100VH;
   width: auto;
 }
 
 .billede_front {
-  height: 100vh;
+  height: 100VH;
   right: 40px;
+  position: absolute;
 }
 
 .background_front {
   background-color: #ee9b2b;
   position: relative;
-  height: 100vh;
+  height: 100VH;
 }
 
 .tekst_lang li {
@@ -263,7 +271,6 @@ img {
 .tekst {
   margin: auto;
   width: 70%;
-  position: center;
 }
 
 .billede {
@@ -299,7 +306,7 @@ img {
   color: #1f1f1f; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 10px;
   font-size: 18px; /* Increase font size */
   font-family: Sofia Pro;
 }
