@@ -1,0 +1,435 @@
+body {
+  margin: 0px;
+}
+
+/*BURGERMENU*/
+
+.hamburger {
+  position: relative;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  float: right;
+  background: none;
+  border: none;
+  margin-right: 20px;
+  margin-top: 10px;
+  z-index: 99;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #353535;
+  margin: 6px 6px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.navigation {
+  position: fixed;
+  float: right;
+  top: 0px;
+  right: -100%;
+  width: 180px;
+  display: block;
+  z-index: 98;
+  background-color: #e8e8e8;
+  transition: 0.4s;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.navigation a {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 20px;
+  margin-left: -20px;
+  text-align: right;
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
+.navigation a:hover {
+  background-color: #ee9b2b;
+}
+
+.navigation.is-active {
+  right: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.smenu a {
+  font-size: 15px;
+  color: #353535;
+}
+
+/*Font*/
+
+@font-face {
+  font-family: "Ogg";
+  src: url(/Fonts/Ogg-www.dfonts.org/Ogg-Roman.otf);
+}
+
+p {
+  font-family: "sofia-pro", sans-serif;
+  font-weight: lighter;
+  font-size: 10px;
+}
+
+h1 {
+  font-family: "sofia-pro", sans-serif;
+  font-size: 60px;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+
+h2 {
+  font-family: "sofia-pro", sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  margin-left: 4px;
+  margin-top: -20px;
+  padding: 0px;
+}
+
+h3 {
+  position: block;
+  font-family: "Ogg";
+  font-weight: lighter;
+  font-size: 15px;
+  background-color: #ee9b2b;
+  width: 170px;
+  height: 20px;
+  padding-left: 5px;
+  margin-top: 40px;
+}
+
+h4 {
+  position: absolute;
+  font-family: "Ogg";
+  font-weight: lighter;
+  background-color: #e8e8e8;
+  width: 200px;
+  margin-top: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+h5 {
+  width: auto;
+  font-family: "Ogg";
+  font-weight: lighter;
+  font-size: 20px;
+  color: #1f1f1f;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h6 {
+  width: auto;
+  font-family: "sofia-pro", sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+  color: #6f6f6f;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.h7 {
+  font-family: "Ogg";
+  font-size: 40px;
+  color: #e8e8e8;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: -15px;
+  padding-bottom: 0px;
+}
+
+.h8 {
+  font-family: "sofia-pro", sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  text-align: center;
+  color: #e8e8e8;
+  margin: 0px;
+  padding: 0px;
+}
+
+.h9 {
+  font-family: "sofia-pro", sans-serif;
+  font-weight: lighter;
+  font-size: 10px;
+  text-align: center;
+  color: #e8e8e8;
+}
+
+a {
+  font-family: "sofia-pro", sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+li {
+  font-family: "sofia-pro", sans-serif;
+  font-weight: lighter;
+  font-size: 10px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.tekst a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
+.tekst a:hover {
+  font-size: 15px;
+  text-decoration: none;
+  color: #1f1f1f;
+  text-decoration: line-through;
+}
+
+.tekst li {
+  list-style: disc;
+}
+
+/*BILLEDER*/
+img {
+  width: 100%;
+}
+
+/*CLASSES*/
+
+.portfolio {
+  position: absolute;
+  width: 100%;
+}
+
+.billede_front img {
+  height: 100vh;
+  width: auto;
+}
+
+.billede_front {
+  height: 100vh;
+  right: 40px;
+}
+
+.background_front {
+  background-color: #ee9b2b;
+  position: relative;
+  height: 100vh;
+}
+
+.tekst_lang li {
+  list-style: disc;
+}
+
+.tekst li {
+  list-style: disc;
+}
+
+.overskrift_tema {
+  display: inline-block;
+  background-color: #1f1f1f;
+  height: 150px;
+  width: 100%;
+}
+
+.tekst {
+  margin: auto;
+  width: 70%;
+  position: center;
+}
+
+.billede {
+  background-color: #e8e8e8;
+  margin: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.billede img {
+  width: 50%;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.billede p {
+  font-family: "sofia-pro", sans-serif;
+  font-weight: lighter;
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+
+/*SCROLL*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #f5f3f3; /* Set a background color */
+  color: #1f1f1f; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  font-family: Sofia Pro;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+@media (min-width: 600px) {
+  /*--- CLASSES web --- */
+  body {
+    width: 80%;
+    background-color: #ee9b2b;
+    margin: auto;
+  }
+
+  main {
+    background-color: white;
+  }
+
+  .om_mig {
+    display: grid;
+    height: 100%;
+    margin-bottom: 0px;
+  }
+
+
+  .citat {
+    grid-column: 1/2;
+    background-color: #353535;
+    margin-top: 60px;
+    margin-bottom: 345px;
+    margin-right: 10px;
+  }
+
+  .citat img {
+    float: none;
+    position: none;
+    margin-top: 50px;
+    margin-left: 25%;
+  }
+
+  .billede img {
+    float: none;
+  }
+
+  .tekst_mig {
+    grid-column: 3/4;
+    margin-top: 50px;
+  }
+
+  .tekst {
+    margin-bottom: 40px;
+    padding: 0px;
+  }
+
+  .tekst_lang {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    column-gap: 10px;
+    column-count: 2;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-width: 100%;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portfolio {
+    position: absolute;
+  }
+
+  .billede_front img {
+    height: 100vh;
+    width: auto;
+  }
+
+  .billede_front {
+    height: 100vh;
+    position: absolute;
+    right: 330px;
+  }
+
+
+
+  /*--- FONTS web --- */
+
+  h1 {
+    font-size: 200px;
+    width: 100%;
+    margin-left: -13px;
+    margin-top: -80px;
+    margin-bottom: -65px;
+    padding-top: -50px;
+    z-index: 12;
+  }
+
+  h2 {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+  }
+
+  h3 {
+    width: 400px;
+    margin-top: 10px;
+  }
+
+  h5 {
+    color: #e8e8e8;
+  }
+
+  h6 {
+    color: #c2c0c0;
+  }
+
+  p {
+    line-height: 15px;
+  }
+
+  /*--- IMG ---*/
+
+  .citat img {
+    float: right;
+  }
+}
